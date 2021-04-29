@@ -36,7 +36,8 @@ app.use('/api/farmyards', rootFarmyard)
 /**
  *  DATABASE 
  */
-mongoose.connect(process.env.DATABASE,  {
+const DATABASE = 'mongodb://localhost/farmyardOfChicken'
+mongoose.connect(DATABASE,  {
     useNewUrlParser : true,
     useCreateIndex :true,
     useUnifiedTopology:true
